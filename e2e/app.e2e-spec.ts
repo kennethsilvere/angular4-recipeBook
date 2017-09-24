@@ -1,14 +1,14 @@
-import { Angular4RecipeBookPage } from './app.po';
+import { NewCliPage } from './app.po';
 
-describe('angular4-recipe-book App', () => {
-  let page: Angular4RecipeBookPage;
+describe('new-cli App', () => {
+  let page: NewCliPage;
 
   beforeEach(() => {
-    page = new Angular4RecipeBookPage();
+    page = new NewCliPage();
   });
 
-  it('should display welcome message', () => {
+  it('should display message saying app works', () => {
     page.navigateTo();
-    expect(page.getParagraphText()).toEqual('Welcome to app!!');
+    expect(page.getParagraphText()).toEqual('app works!');
   });
 });
